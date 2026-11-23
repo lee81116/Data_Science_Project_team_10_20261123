@@ -1,0 +1,92 @@
+{
+  "downloaded_on": "2026-11-22 15:53 UTC",
+  "tickers_requested": 100,
+  "tickers_downloaded": 100,
+  "tickers_missing": [],
+  "kaggle_last_date": "2026-02-18",
+  "yahoo_last_date": "2026-11-20",
+  "tickers_not_reaching_last_date": [
+    "EA",
+    "WBD"
+  ],
+  "splits_after_2026_02_18": {
+    "BKNG": [
+      "2026-04-06"
+    ],
+    "CRWD": [
+      "2026-07-02"
+    ],
+    "HON": [
+      "2026-06-29"
+    ],
+    "KLAC": [
+      "2026-06-12"
+    ],
+    "MNST": [
+      "2026-08-11"
+    ]
+  },
+  "new_rows_after_kaggle_end": 18818,
+  "new_trading_days": 192,
+  "overlap_rows_compared": 76559,
+  "overlap_return_abs_diff_median": 2.656747794427261e-06,
+  "overlap_return_abs_diff_p999": 0.029869853750290512,
+  "overlap_return_abs_diff_max": 0.104954584597585,
+  "overlap_share_abs_diff_above_1e-4": 0.057080160399169265,
+  "overlap_return_corr": 0.997178827834767,
+  "vix_old_last_date": "11/17/2026",
+  "vix_new_last_date": "11/20/2026",
+  "vix_overlap_days": 9318,
+  "vix_overlap_max_abs_diff_open": 0.0,
+  "vix_overlap_max_abs_diff_close": 0.0,
+  "worst_overlap_rows": [
+    {
+      "Ticker": "AZN",
+      "Date": "2025-02-06",
+      "ret_kaggle": 0.12497154564079227,
+      "ret_yahoo": 0.02001696104320727
+    },
+    {
+      "Ticker": "AZN",
+      "Date": "2024-05-29",
+      "ret_kaggle": -0.07758676613687976,
+      "ret_yahoo": -0.00704774707514777
+    },
+    {
+      "Ticker": "AZN",
+      "Date": "2025-02-05",
+      "ret_kaggle": -0.034859025997803106,
+      "ret_yahoo": 0.02871230267920133
+    },
+    {
+      "Ticker": "AZN",
+      "Date": "2024-07-08",
+      "ret_kaggle": 0.05580141059327892,
+      "ret_yahoo": -0.0027152750997012642
+    },
+    {
+      "Ticker": "AZN",
+      "Date": "2025-03-24",
+      "ret_kaggle": -0.06524022053032308,
+      "ret_yahoo": -0.011210571396959468
+    },
+    {
+      "Ticker": "AZN",
+      "Date": "2025-08-25",
+      "ret_kaggle": 0.0374944299446176,
+      "ret_yahoo": -0.01617885791066298
+    },
+    {
+      "Ticker": "AZN",
+      "Date": "2025-04-09",
+      "ret_kaggle": -0.024488554262681594,
+      "ret_yahoo": 0.028659514561138577
+    },
+    {
+      "Ticker": "AZN",
+      "Date": "2025-03-10",
+      "ret_kaggle": 0.03332883551477539,
+      "ret_yahoo": -0.019483884008168806
+    }
+  ]
+}

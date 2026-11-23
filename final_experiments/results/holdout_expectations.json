@@ -1,0 +1,17 @@
+{
+  "written": "2026-11-22 (Taipei), before any price dated after 2026-02-18 was downloaded and before any holdout metric was computed",
+  "holdout_period": "2026-02-18 to the last labelled day available (about 190 trading days); models are trained once on data up to 2026-02-17 and not refitted",
+  "basis": "yearly walk-forward results 2018-2025 from this pipeline",
+  "expectations": {
+    "LGB_T27_pooled_auroc": "0.50 to 0.53 (yearly range so far 0.50 to 0.54); CI likely to include 0.5",
+    "LGB_T27+VIXPRE_pooled_auroc": "0.54 to 0.60 (yearly range so far 0.53 to 0.61)",
+    "timing_effect_T27_to_T27+VIXPRE": "+0.03 to +0.08, CI excludes 0",
+    "M1_pooled_auroc": "0.54 to 0.60",
+    "M1_perday_auc": "0.51 to 0.55, point estimate above 0.5 (about 85% confident); with about 190 days the CI half-width is near 0.02, so the CI may include 0.5",
+    "M1_minus_LGB_perday": "+0.01 to +0.04 (positive in 7 of 8 full test years so far)",
+    "overnight_vs_intraday": "T27+VIXPRE overnight AUROC 0.60 to 0.68, intraday AUROC 0.49 to 0.52",
+    "conversion_law": "predicted stock-level AUROC of the VIX gap within 0.02 of the observed value",
+    "krauss_features": "per-day AUC 0.50 to 0.52, k=10 accuracy 50% to 52%"
+  },
+  "what_would_count_as_failure": "T27+VIXPRE minus T27 not positive, or M1 per-day AUC below 0.5: the main claims would not replicate prospectively and would be reported that way"
+}

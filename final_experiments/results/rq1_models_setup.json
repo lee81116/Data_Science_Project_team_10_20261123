@@ -1,0 +1,47 @@
+{
+  "rf_params": {
+    "n_estimators": 300,
+    "max_depth": 8,
+    "min_samples_leaf": 1000,
+    "max_features": "sqrt",
+    "max_samples": 0.3,
+    "n_jobs": 4,
+    "random_state": 42
+  },
+  "xgb_params": {
+    "n_estimators": 200,
+    "learning_rate": 0.03,
+    "max_depth": 3,
+    "min_child_weight": 250,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "reg_lambda": 10.0,
+    "tree_method": "hist",
+    "n_jobs": 4,
+    "random_state": 42,
+    "eval_metric": "logloss"
+  },
+  "lgb_params": {
+    "objective": "binary",
+    "num_leaves": 7,
+    "n_estimators": 200,
+    "min_child_samples": 1000,
+    "learning_rate": 0.03,
+    "subsample": 0.8,
+    "subsample_freq": 1,
+    "colsample_bytree": 0.8,
+    "reg_lambda": 10.0,
+    "random_state": 42,
+    "n_jobs": 4,
+    "verbose": -1
+  },
+  "expectations_written_before_run": {
+    "T27: |model - LightGBM| pooled AUROC": "below 0.005 for RF and XGBoost",
+    "T27 level": "RF and XGBoost pooled AUROC between 0.505 and 0.520",
+    "T27 -> T27+VIXPRE": "pooled gain between +0.04 and +0.07 for RF and XGBoost, interval excludes 0"
+  },
+  "n_boot": 5000,
+  "block_days": 20,
+  "test_rows": 189237,
+  "test_days": 2042
+}

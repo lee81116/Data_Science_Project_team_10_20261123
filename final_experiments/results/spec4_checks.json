@@ -1,0 +1,11 @@
+{
+  "vix_open_corr": {
+    "2013-01..2016-04-14": -0.7750649874420067,
+    "2016-04-15..2016-12": -0.7182342637132068,
+    "2017..2018": -0.5435129059444851
+  },
+  "overnight_label_rows_differ_adj_vs_raw": 1698,
+  "overnight_ret_gap_gt_5pct_rows": 1,
+  "auroc_on_adj_T27+VIXPRE": 0.6440372833818585,
+  "auroc_on_raw_T27+VIXPRE": 0.6430728032054904
+}

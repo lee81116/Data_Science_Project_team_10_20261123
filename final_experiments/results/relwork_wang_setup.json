@@ -1,0 +1,53 @@
+{
+ "features": [
+  "open",
+  "high",
+  "low",
+  "close",
+  "volume",
+  "sma5",
+  "sma10",
+  "sma20",
+  "sma50",
+  "rsi",
+  "macd",
+  "macd_signal",
+  "bb_upper",
+  "bb_middle",
+  "bb_lower",
+  "atr",
+  "obv",
+  "stoch_k",
+  "stoch_d",
+  "adx",
+  "cci",
+  "willr",
+  "momentum"
+ ],
+ "hp": {
+  "hidden": 128,
+  "layers": 2,
+  "dropout": 0.3,
+  "lr": 0.001,
+  "batch": 64,
+  "max_epochs": 100,
+  "patience": 15,
+  "clip": 1.0,
+  "t0": 10
+ },
+ "seq": 60,
+ "train": [
+  "2020-01-01",
+  "2023-04-30"
+ ],
+ "val": [
+  "2023-05-01",
+  "2024-02-29"
+ ],
+ "test": [
+  "2024-03-01",
+  "2024-12-31"
+ ],
+ "test_days": 211,
+ "test_tickers": 98
+}

@@ -1,0 +1,30 @@
+{
+  "written_before_running": "2026-11-22, before any supplementary script was executed",
+  "S5_stock_mode": {
+    "reproduction": "rebuilt per-stock LGB yearly-avg AUROC within +-0.01 of the teammate's 0.508 / 0.561 / 0.554 (T27 / VIXPRE / T27+VIXPRE); per-day AUC within +-0.01 of 0.505 / 0.517 / 0.517",
+    "global_vs_stock": "global beats stock on pooled AUROC for T27+VIXPRE by +0.01 to +0.02 (CI excludes 0)",
+    "mechanism": "stock-mode VIXPRE per-day AUC rises with |gap| (per-stock models learn exposure), roughly 0.505 / 0.52 / 0.55 across the three gap buckets, and stays below the two-parameter M1 (0.517 / 0.538 / 0.583)"
+  },
+  "S6_decomposed_model": {
+    "D1_vs_M1_perday": "+0.001 to +0.004 (from d' addition of two near-independent signals: 0.532 and 0.509)",
+    "D1_vs_M1_pooled": "within +-0.002",
+    "D1_vs_monolithic_LGB_perday": "+0.02 to +0.03"
+  },
+  "S7_theory": {
+    "rho_vs_beta": "ranking by rho gives a higher per-day AUC than ranking by beta, by +0.002 to +0.010",
+    "placebo": "rho shuffled across stocks within a day gives per-day AUC 0.500 +- 0.005",
+    "conversion_law": "one-factor Gaussian prediction 0.5 + (2/pi) asin(kappa*rho/sqrt(2)) lands within +-0.01 of the observed pooled AUROC of -gap (0.5777)",
+    "perday_implied": "model-implied per-day AUC of the rho ranking within +-0.01 of the observed 0.532"
+  },
+  "S8_robustness": {
+    "by_year": "M1 per-day AUC above 0.5 in at least 8 of 9 test years",
+    "unseen_stocks": "M1 fitted on one half of the tickers reaches per-day AUC above 0.52 on the other half",
+    "era_decay": "weak expectation: Krauss-feature per-day AUC is higher in 2005-2009 (0.51 to 0.52) than in 2018-2026 (0.509); I am not confident in this one"
+  },
+  "S6b_close_time_decomposed": {
+    "written": "after S5/S6 results were seen, before 09b was run",
+    "E1_vs_T27_pooled": "decomposed 16:00 model (rho x same-day market return + selection score) within +-0.004 of monolithic LGB T27 pooled AUROC (0.513); CI includes 0",
+    "E1_vs_T27_perday": "+0.003 to +0.005 per-day AUC over monolithic LGB T27 (0.510), borderline significance",
+    "label_design": "cross-sectional label vs up/down label, same features and model: per-day AUC +0.002 to +0.005"
+  }
+}

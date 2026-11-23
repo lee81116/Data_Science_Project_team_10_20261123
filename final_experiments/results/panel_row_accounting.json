@@ -1,0 +1,28 @@
+{
+  "raw_rows": 514075,
+  "raw_tickers": 100,
+  "raw_date_min": "2000-01-03",
+  "raw_date_max": "2026-02-18",
+  "duplicate_ticker_date": 0,
+  "invalid_ohlc_rows": 0,
+  "zero_volume_rows": 1594,
+  "stock_dates_without_vix": 0,
+  "rows_after_cleaning": 514075,
+  "drop_missing_indicator_or_zero_volume": 23951,
+  "drop_no_next_day_label": 100,
+  "drop_adj_close_below_5": 48119,
+  "drop_before_2002": 12023,
+  "panel_rows": 429882,
+  "panel_tickers": 100,
+  "panel_date_min": "2002-01-02",
+  "panel_date_max": "2026-02-17",
+  "test_rows_2018_2026": 189237,
+  "reported": {
+    "raw_rows": 514075,
+    "drop_missing_or_zero_volume": 22887,
+    "drop_no_label": 100,
+    "drop_below_5": 48668,
+    "panel_rows": 430397,
+    "test_rows": 184061
+  }
+}
